@@ -1,0 +1,213 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.3.1512.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>ControleurDePatients</Name>
+        <Access>Public</Access>
+        <Location left="974" top="708" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public JFrame frame</Member>
+        <Member type="Method">public void main()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Patient</Name>
+        <Access>Public</Access>
+        <Location left="405" top="100" />
+        <Size width="162" height="298" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">protected String nom</Member>
+        <Member type="Field">protected String motif</Member>
+        <Member type="Field">protected double urgence</Member>
+        <Member type="Field">protected static double count</Member>
+        <Member type="Constructor">public Patient()</Member>
+        <Member type="Constructor">public Patient(String nom, String motif, int urgence)</Member>
+        <Member type="Method">public void setNom(String nom)</Member>
+        <Member type="Method">public void setMotif(String motif)</Member>
+        <Member type="Method">public void setUrgence(int urgence)</Member>
+        <Member type="Method">public String getNom()</Member>
+        <Member type="Method">public double getUrgence()</Member>
+        <Member type="Method">public int getUrgenceHopital()</Member>
+        <Member type="Method">public String toString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Clinique</Name>
+        <Access>Public</Access>
+        <Location left="357" top="631" />
+        <Size width="162" height="298" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int DEFAULT_CAPACITY</Member>
+        <Member type="Field">int front</Member>
+        <Member type="Field">int rear</Member>
+        <Member type="Field">int count</Member>
+        <Member type="Field">Patient[] queue</Member>
+        <Member type="Constructor">public Clinique()</Member>
+        <Member type="Method">public void enqueue(Patient patient)</Member>
+        <Member type="Method">public Patient dequeue()</Member>
+        <Member type="Method">public void expandCapcity()</Member>
+        <Member type="Method">public Patient first()</Member>
+        <Member type="Method">public int size()</Member>
+        <Member type="Method">public boolean isEmpty()</Member>
+        <Member type="Method">public String toString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EmptyCollectionException</Name>
+        <Access>Public</Access>
+        <Location left="767" top="692" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public EmptyCollectionException()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RuntimeException</Name>
+        <Access>Public</Access>
+        <Location left="565" top="620" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ControleurDePatientsPanel</Name>
+        <Access>Public</Access>
+        <Location left="681" top="149" />
+        <Size width="229" height="417" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Urgence urgence</Member>
+        <Member type="Field">private Clinique clinique</Member>
+        <Member type="Field">private int DEFAULT_CAPACITY</Member>
+        <Member type="Field">private Patient[] tabPatient</Member>
+        <Member type="Field">private int counter</Member>
+        <Member type="Field">private JButton urgenceOutButton</Member>
+        <Member type="Field">private JButton cliniqueOutButton</Member>
+        <Member type="Field">private JLabel titreLabel</Member>
+        <Member type="Field">private JButton addPatientButton</Member>
+        <Member type="Field">private JPanel infermieresPanel</Member>
+        <Member type="Field">private JTextArea urgenceTextArea</Member>
+        <Member type="Field">private JTextArea cliniqueTextArea</Member>
+        <Member type="Field">private JTextArea nombreCliniqueTextArea</Member>
+        <Member type="Field">private JTextArea nombreUrgenceTextArea</Member>
+        <Member type="Method">private boolean enqueueDonne(Patient pat)</Member>
+        <Member type="Method">private void enqueue(Patient pat)</Member>
+        <Member type="Method">private String toStringtab()</Member>
+        <Member type="Method">private int getIndiceMinUrgence()</Member>
+        <Member type="Method">private int getIndiceMaxUrgence()</Member>
+        <Member type="Constructor">public ControleurDePatientsPanel()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AjouterPatientListener</Name>
+        <Access>Public</Access>
+        <Location left="1019" top="176" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void actionPerformed()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ActionListener</Name>
+        <Access>Public</Access>
+        <Location left="1476" top="176" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>JFrame</Name>
+        <Access>Public</Access>
+        <Location left="1247" top="15" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SortirPatientUrgence</Name>
+        <Access>Public</Access>
+        <Location left="1117" top="432" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void actionPerformed()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SortirPatientClinique</Name>
+        <Access>Public</Access>
+        <Location left="1454" top="580" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void actionPerformed()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="6" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="3" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="5" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="5" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="5" second="6">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="5" second="9">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="9" second="7">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="5" second="10">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="10" second="7">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

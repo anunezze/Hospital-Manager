@@ -1,0 +1,11 @@
+Debut
+	si la grandeur de la clinique est autre que 0
+		faire sortir un message qui dit montre le client qui va sortir
+		sortir le client
+		refresh les JTextArea
+		
+	sinon
+		afficher un message d'erreur
+
+Fin
+	

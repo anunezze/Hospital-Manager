@@ -1,0 +1,15 @@
+Comment :	Methode qui retourne rien et qui rentre le patient dans le tableau
+
+Comment :
+Debut
+	si le tableau est rempli deja
+		si le patient dans le tableau qui a la plus petite urgence est plus petit que l'urgence du patient entré
+			rentrer le patient dans la cette casse
+	
+	sinon
+		pour indice de 0 à grandeur du tableau
+			s'il y a personne au tableau[indice] 
+				entrer le patient entré dans tableau[indice]
+				augmenter le counter de 1
+				sortir de la boucle
+Fin

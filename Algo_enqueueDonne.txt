@@ -1,0 +1,20 @@
+Quoi : 	methode qui retourne un boolean true si on peut rentrer le patient 
+		et false si on ne peut pas
+		
+Comment:
+Debut
+	boolean donne = false
+	
+	si le tableau est rempli
+		si le le patient le moins urgent dans le tableau est plus petit que l'urgence du patient recu
+			retourne true
+		sinon
+			retourne donne
+			
+	sinon
+		pour indice de 0 a capacité maximale du tableau
+			si le l'urgence du tableau[indice] == 0
+				retourne true
+	
+	retourne donne
+Fin

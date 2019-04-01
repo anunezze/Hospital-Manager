@@ -1,0 +1,11 @@
+Debut
+	si la grandeur du tableau est plus grande que 0
+		afficher le patient qui va sortir
+		mettre la casse du patient sortant comme nouvelle
+		refresh le text Area avec le message adequa
+		decrementer le counter de 1
+		
+	sinon
+		affiche un message d'erreur
+		
+Fin

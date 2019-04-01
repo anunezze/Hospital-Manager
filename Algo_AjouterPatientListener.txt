@@ -1,0 +1,19 @@
+Quoi : 	Un listener qui va s'occuper de rentrer le patient ajouté
+		dans la bonne structure (urgence ou clinique)
+
+Comment :
+Debut
+	Patient pa1 = creer le nouveau patient et demander les infomations necesaires
+	
+	si(utiliser la methode enqueueDonne en parametres pa1
+		mettre pa1 dans urgence
+		changer le UrgenceTexte de mon graphique par le toString de ma variable urgence
+
+	sinon
+		mettre pa1 dans la clinique
+		changer le CliniqueTexte de mon graphique par le toString de ma variable clinqie
+
+	
+	changer le nombreCliniqueTextArea par la bonne grandeur de la clinique et le bon temps(grandeur de la clinique *15)
+	changer le nombreUrgenceTextArea par la bonne grandeur de l'urgence
+Fin

@@ -1,0 +1,16 @@
+Quoi :	Methode qui retourne la casse dans un tableau ou il y a l
+		la plus petite urgence
+	
+Comment :
+Debut
+	entier min = 0
+	
+	pour indice de 0 a capacité entiere du tableau
+		si l'urgence du tableau[min] est plus grande que l'urgence du tableau[indice]
+			min = i
+	
+	patient = tableau[min]
+	tableau[min] = creer nouveau patient
+	
+	retourne min
+Fin

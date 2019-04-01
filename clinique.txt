@@ -1,0 +1,6 @@
+Liste de patients qui ont été traités à la clinique :
+
+Nom : 
+Motif : 
+Urgence : 1
+***************************************************************
